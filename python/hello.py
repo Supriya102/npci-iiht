@@ -105,5 +105,143 @@ else:
 if(x < 9):
     if x > 4:
         print("test")
-        print("Hello")
+    print("Hello")
 
+
+# def helo():
+#     print("")
+#     if x < 11:
+#         if x > 5 and x < 9:
+#             print("Yes is quite small")
+#     print("Oops")
+
+# Assignment 1 : Gimme the list of all the students that have passed in a class with proper grading system.
+#               e.g. if a student has 3 subjects : Math / Physics / Chemistry
+#                    if he scores less than 50 % in two of those subjects he fails over all
+#                    however if he fails in only 1 subject then he fails in just 1 subject, that should be considered 
+#                    as re appear
+# 
+#               Expectations : 
+#                           1. Get a list of students failing in more than 2 or more subjects i.e. overall performance of class
+#                           2. Get a list of students failing in 1 subject only - i.e. re appearing student
+#                           3. Calculate the overall class performance based on students passed - point #1
+#                           4. Calculate the overall performance based on grading system, to showcase the %age of
+#                              students falling under 
+#                                       a. Distinction - 80 % 
+#                                       b. First Division - 60 - 79 % 
+#                                       c. Second Division - 50 - 59 %
+
+
+
+# for loop & while loop
+
+nums = [10,11,17,-1,2]
+for i in nums:
+    print(i)
+
+# sum 
+
+sum = 0
+for i in nums:
+    sum = sum + i
+
+print("Sum is ",sum)
+
+
+# range function
+
+# range(start,end, increment)
+nums = range(2,9,2)
+
+print("Traverse via the range values")
+for i in nums:
+    print(i)
+
+
+# traverse via the list values using range function to get the index as well
+
+for index in range(len(nums)):
+    print("Element in num ",nums[index])
+
+# create an empty list
+lst = []
+# lst[0] = False
+# lst[0] = True
+# lst[0] = False
+
+lst.append(False)
+lst.append(True)
+lst.append(False)
+lst.append(False)
+
+# traverse via the values
+for l in lst:
+    print("Boolean ",l)
+
+lst1 = list()
+
+# lst1[0] = "Hello"
+# lst1[1] = "Hi"
+# lst1[2] = "Hey"
+
+lst1.append("Hello")
+lst1.append("Hey")
+lst1.append("Hola")
+
+for ls in lst1:
+    print("String ",ls)
+
+
+# slicing
+
+lst1[0:1]
+
+# add a record at a particular position
+lst.insert(0,"Welcome")
+
+# get the position of an element
+position = lst.index(False)
+print("POSITION ",position)
+
+print("Mix Blendid lst ........")
+print(lst)
+# extends : add a list to end of another list
+
+
+n_lst = ["Error","Exception"]
+lst1.extend(n_lst)
+
+print(lst1)
+
+# while loop
+
+count = 0
+
+while(count < 5):
+    print("Count ",count)
+    count = count + 1
+
+for i in range(5):
+    if i % 2 == 0:
+        print(i)
+        if(i == 4):
+            break       
+        # break - will exit from the loop
+        # continue - skip the execution at that point & continue the iteration
+        # pass - skip / ignore the statements after this point
+        # 
+for i in range(0,10):
+    if i % 3 == 0:
+        pass
+        print("I is ",i)
+
+# Assignment 2: Give me a tower of hanoi 
+
+#                   1
+#               3       3
+#           5       5      5 
+#       
+
+# Line 1 : 1s = 1
+# Line 2 : 3s = 3 * 2 = 6
+# Line 5 : 5s = 5 * 3 = 15
